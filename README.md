@@ -134,6 +134,7 @@ link do pull request: [https://github.com/GuiiDevv/meu-projeto-docker/pull/new/q
 
 ## 8. Estrutura do projeto
 
+```text
 meu-projeto-docker/
 ├── .github/
 │   └── workflows/
@@ -179,4 +180,5 @@ meu-projeto-docker/
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
