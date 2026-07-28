@@ -132,7 +132,14 @@ link do pull request: [https://github.com/GuiiDevv/meu-projeto-docker/pull/new/q
 ![alt text](/docs/images/image-12.png)
 
 
-## 8. Estrutura do projeto
+## 8. Dificuldades e aprendizados
+
+Durante a atividade, tive mais dificuldade em dois pontos. O primeiro foi no teste de integração contínua: criar uma branch nova, fazer a alteração proposital para quebrar o teste, enviar para o repositório remoto e abrir o Pull Request para validar a execução do pipeline. O segundo foi na configuração dos serviços no Compose, principalmente para ajustar corretamente variáveis de ambiente, dependência entre aplicação e banco, healthcheck e persistência com volume. Depois dos ajustes, consegui executar o fluxo completo com sucesso e validar o CI no GitHub Actions.
+
+sobre os containers, entendi que é possível isolar e conectar aplicação, banco de dados, volumes e rede, criando um ambiente virtual padronizado em que todos os serviços se comunicam entre si.
+
+
+## 9. Estrutura do projeto
 
 ```text
 meu-projeto-docker/
