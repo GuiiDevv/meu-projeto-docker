@@ -1,8 +1,10 @@
 Projeto Docker Compose - DevOps
 
 Aluno
-
+---
 Nome: Guilherme Cavalcante
+
+Turma: Vespertino
 
 Data: 28/07
 
@@ -11,8 +13,9 @@ Aplicacao usada: [docker/getting-started-app — To-Do em Node.js]
 ---
 
 1. COMO EXECUTAR ESSE PROJETO
+· · ·
 
-git clone []
+git clone [https://github.com/GuiiDevv/meu-projeto-docker.git]
 
 cd [meu-projeto-docker]
 
