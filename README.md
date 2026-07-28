@@ -99,3 +99,19 @@ Variáveis sensíveis: carregadas via .env, não versionado
 Modelo em: [.env.example]
 
 ![alt text](/docs/images/image-10.png)
+
+
+## 6. Integração Contínua (GitHub Actions)
+
+
+1. [valida o compose]
+
+2. [builda a imagem]
+
+3. [sobe a stack]
+
+4. [aguarda a app responder e testa criar uma tarefa via API]
+
+5. [derruba a stack]
+
+![alt text](/docs/images/image-11.png)
