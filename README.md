@@ -1,7 +1,7 @@
-Projeto Docker Compose - DevOps
+# Projeto Docker Compose + ci - DevOps
 
-Aluno
----
+## Aluno
+
 Nome: Guilherme Cavalcante
 
 Turma: Vespertino
@@ -12,7 +12,7 @@ Aplicacao usada: [docker/getting-started-app — To-Do em Node.js]
 
 
 ## 1. COMO EXECUTAR ESSE PROJETO
----
+
 
 git clone [https://github.com/GuiiDevv/meu-projeto-docker.git]
 
@@ -26,7 +26,7 @@ depois acesse: htpp://localhost:3000
 
 
 ## 2. IMAGEM E DOCKER
----
+
 
 Imagem criada com sucesso utilizando Dockerfile multi-stage.
 
@@ -46,7 +46,7 @@ Comando: docker run -d -p 3000:3000 --name todo todo-app:v1
 
 
 ## 3. VOLUME E PERSISTENCIA
----
+
 
 3.1 - sem volume: os dados nao persistiam depois de detruir o container "docker rm -f todo"
 
@@ -68,7 +68,7 @@ Enquanto o primeiro para e apaga o container o segundo faz a mesma coisa com con
 
 
 ## 4. REDE
----
+
 
 Rede criada: [todo-net] 
 
@@ -82,7 +82,7 @@ A porta do banco está exposta ao host? [Não — seria exposto se eu rodasse o 
 
 
 ## 5. DOCKER COMPOSE 
----
+
 
 Serviços: [app e db]
 
