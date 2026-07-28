@@ -115,3 +115,68 @@ Modelo em: [.env.example]
 5. [derruba a stack]
 
 ![alt text](/docs/images/image-11.png)
+
+
+## 7. Quebra proposital do CI
+
+O que eu quebrei: [alterei o /items por /item no curl do CRUD] 
+
+Erro que apareceu no log:[Run curl -sf -X POST http://localhost:3000/item \Error: Process completed with exit code 22.]
+
+Como o CI reagiu: [SMOKE TEST DO CRUD] 
+
+Como eu corrigi: [modifiquei o /item por /items novamente]
+
+link do pull request: [https://github.com/GuiiDevv/meu-projeto-docker/pull/new/quebra-proposital]
+
+![alt text](/docs/images/image-12.png)
+
+
+## 8. Estrutura do projeto
+
+meu-projeto-docker/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── docs/
+│   └── images/
+├── spec/
+│   ├── persistence/
+│   │   └── sqlite.spec.js
+│   └── routes/
+│       ├── addItem.spec.js
+│       ├── deleteItem.spec.js
+│       ├── getItems.spec.js
+│       └── updateItem.spec.js
+├── src/
+│   ├── persistence/
+│   │   ├── index.js
+│   │   ├── mysql.js
+│   │   └── sqlite.js
+│   ├── routes/
+│   │   ├── addItem.js
+│   │   ├── deleteItem.js
+│   │   ├── getItems.js
+│   │   └── updateItem.js
+│   ├── static/
+│   │   ├── css/
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── styles.css
+│   │   │   └── font-awesome/
+│   │   ├── js/
+│   │   │   ├── app.js
+│   │   │   ├── babel.min.js
+│   │   │   ├── react-bootstrap.js
+│   │   │   ├── react-dom.production.min.js
+│   │   │   └── react.production.min.js
+│   │   └── index.html
+│   └── index.js
+├── .dockerignore
+├── .env.example
+├── .gitignore
+├── compose.yaml
+├── Dockerfile
+├── package-lock.json
+├── package.json
+└── README.md
+
